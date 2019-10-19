@@ -1,15 +1,17 @@
-n=int(input("Enter an integer:"))
-print("Factors are:")
-i=0
-for(i=0;i<n;i++)
-while(i<=n):
-    k=0
-    if(n%i==0):
-        j=1
-        while(j<=i):
-            if(i%j==1):
-                k=k+1
-            j=j+1
-        if(k==2):
-            print(i)
-    i=i+1
+print("Python program to display prime factors of a given number")
+a=int(input("enter a number=")
+def prime_factors(n):
+    i = 2
+    factors = []
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n =n// i
+            factors.append(i)
+    if n > 1:
+        factors.append(n)
+    return factors
+f=prime_factors(a)
+print ("Prime factors of ",a,"=",f)      
+      
